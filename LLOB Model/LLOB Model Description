@@ -1,0 +1,8 @@
+Most market impact models rely on heavy behavioural assumptions or parameter curve-fitting. Donier, Bouchaud et al. (2015) took a radically different route: treating the order book as a physical reaction-diffusion system. Liquidity simply acts like a diffusing gas.
+
+The elegance of this framework is that the empirical "square-root law" of market impact (I proportionate to sqrt(Q) isn't baked into the equations. It naturally emerges from the local depletion and replenishment of limit orders.
+A few key phenomena captured in the replication dashboard:
+
+1.  The Crossover: A clean transition from linear impact (slow trading) to the square-root regime (fast trading) as participation rate hits a mathematical ceiling.
+2.  Book Memory: Local order book deformation explains post-execution price decay (~1/sqrt(tau)) and order reversal trajectories.
+3.  Spread Asymmetry: The mechanical widening of the spread on the execution side (e.g., Ask depletion after a massive buy meta-order), directly matching real-world LOB behaviour.
